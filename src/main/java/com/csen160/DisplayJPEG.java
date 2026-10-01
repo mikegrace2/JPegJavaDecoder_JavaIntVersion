@@ -21,7 +21,7 @@ public class DisplayJPEG extends JFrame {
         File selectedFile = chooser.getSelectedFile();
         JFrame frame = new JFrame("JPEG Image");
 
-        ImageIcon image = new ImageIcon(selectedFile.getAbsolutePath()); // This one line does the whole JPeg decoding for you, no need to implement it yourself.
+        ImageIcon image = new ImageIcon(selectedFile.getAbsolutePath()); // This one line does the whole JPeg decoding for you.
         frame.add(new ScaledImagePanel(image.getImage()));
 
         frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
